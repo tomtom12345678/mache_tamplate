@@ -1,6 +1,8 @@
 /*globall*/
 body{
  font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 *{
     margin: 0;
@@ -35,13 +37,18 @@ a{
     text-transform: uppercase;
     border-radius: 10em;
 }
+.page-section{
+    margin: 100px 0;
+}
 /*header*/
 .page-header{
-    position: relative;
+    color: #fff;
+    text-align: center;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    top: .5em;
 }
 .logo{
     font-size: 1.6rem;
@@ -61,7 +68,7 @@ a{
 .page-nav{
     width: 100%;
     position: absolute;
-    top: 100%;
+    top:100%;
 }
 .page-nav .nav-list{
     text-align: center;
@@ -83,33 +90,41 @@ a{
     display: block;
 }
 /*----------main--------------*/
-/*top-section*/
 .top-section{
-    text-align: center;
-    color: #fff;
-}
-.top-section .bg-image{
-    background: url(../img/bgS.jpg);
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../img/bgS.jpg) no-repeat;
     background-size: cover;
-    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
     height: 100vh;
-    z-index: -1;
-    top: 0;
+    color: #fff;
+    text-align: center;
+    position: relative
 }
-.content-container{
+.content-wrapper{
+    top:50%;
+    transform: translate(0,-50%);
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
+    margin: 0 auto;
 }
-.content-container p{
-    margin: 3em 0;
-    display: block;
+.content-wrapper p{
+    margin: 50px 0;
 }
 .top-title{
     font-size: 2rem;
     text-transform: uppercase;
+    font-weight: 300;
+}
+.bold{
+    font-weight: 700;
+}
+.top-title:after{
+    display: block;
+    margin: 35px auto;
+    content: '';
+    border-bottom: 3px solid #ed145b;
+    width: 200px;
+}
+/*--------about-section-----------*/
+.title{
+    color: black;
 }
