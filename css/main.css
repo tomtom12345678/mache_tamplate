@@ -49,6 +49,7 @@ a{
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    margin: 1em auto;
 }
 .logo{
     font-size: 1.6rem;
