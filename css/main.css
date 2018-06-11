@@ -16,6 +16,9 @@ a{
     text-decoration: none;
     color: #fff;
 }
+.page-text{
+    line-height: 1.5em;
+}
 .container{
   max-width: 1200px;
   width: 100%;
@@ -38,7 +41,12 @@ a{
     border-radius: 10em;
 }
 .page-section{
-    margin: 100px 0;
+    padding: 100px 0;
+}
+.section-title{
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #5a5a5a;
 }
 /*header*/
 .page-header{
@@ -99,15 +107,13 @@ a{
     height: 100vh;
     color: #fff;
     text-align: center;
-    position: relative
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.content-wrapper{
-    top:50%;
-    transform: translate(0,-50%);
-    position: absolute;
-    margin: 0 auto;
-}
-.content-wrapper p{
+.top-section p{
     margin: 50px 0;
 }
 .top-title{
@@ -118,14 +124,48 @@ a{
 .bold{
     font-weight: 700;
 }
-.top-title:after{
+.top-title:after, .section-title:after{
     display: block;
     margin: 35px auto;
     content: '';
     border-bottom: 3px solid #ed145b;
     width: 200px;
 }
-/*--------about-section-----------*/
-.title{
-    color: black;
+.section-title-after:after{
+    margin: 35px 0;
 }
+/*--------about-section-----------*/
+.about-section{
+    background: #f4f4f4;
+}
+.about-section .page-text{
+    margin-bottom: 35px;
+}
+.btn-about{
+    background: none;
+    color: #ed145b;
+    padding:0;
+    display: flex;
+    align-items: center;
+}
+.fa-play-circle{
+    font-size: 1.7em;
+    margin-left: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
