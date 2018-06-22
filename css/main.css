@@ -16,8 +16,13 @@ a{
     text-decoration: none;
     color: #fff;
 }
-.page-text{
-    line-height: 1.5em;
+.image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.center-position{
+    text-align: center;
 }
 .container{
   max-width: 1200px;
@@ -47,6 +52,10 @@ a{
     font-size: 1.7em;
     font-weight: 500;
     color: #5a5a5a;
+}
+.page-text{
+    color: #fff;
+    line-height: 1.5em;
 }
 /*header*/
 .page-header{
@@ -105,7 +114,6 @@ a{
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
-    color: #fff;
     text-align: center;
     position: relative;
     display: flex;
@@ -120,6 +128,7 @@ a{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 300;
+    color: #fff;
 }
 .bold{
     font-weight: 700;
@@ -131,7 +140,7 @@ a{
     border-bottom: 3px solid #ed145b;
     width: 200px;
 }
-.section-title-after:after{
+.section-title-left:after{
     margin: 35px 0;
 }
 /*--------about-section-----------*/
@@ -140,6 +149,7 @@ a{
 }
 .about-section .page-text{
     margin-bottom: 35px;
+    color: #5a5a5a;;
 }
 .btn-about{
     background: none;
@@ -152,19 +162,91 @@ a{
     font-size: 1.7em;
     margin-left: 0.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.image{
+    margin: 2em auto;
+}
+/*-----------service-section-----------*/
+.section-list{
+    text-align: center;
+}
+.section-item{
+    margin: 2em auto;
+}
+.sub-title{
+    color: #5a5a5a;
+}
+.icon{
+    border: 2px solid #dadada;
+    width: 80px;
+    height: 80px;
+    padding: 3em;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.under-title{
+    text-transform: uppercase;
+    margin-top: 1em;
+    display: block;
+}
+/*--------------aside---------------*/
+.aside{
+    background: url(../img/bgS.jpg) no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aside .page-text{
+    margin: 2em 0;
+}
+.fas-quote{
+    font-size: 2.5em;
+}
+/*-----------prices-section----------*/
+.prices-section{
+    background: #f4f4f4;
+}
+.plate-top{
+    background: #5a5a5a;
+    padding: 3em 0;
+}
+.price-size{
+    font-size: 2em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    margin: 2em 0;
+}
+.type-card{
+    background: #f4f4f4;
+    width: 200px;
+    border-radius: 60px;
+    margin-top: -26px;
+    align-self: center;
+    padding: 1em 0;
+}
+.type-card p{
+    text-transform: uppercase;
+}
+.card-item{
+    margin: 2em 0;
+    color: #5a5a5a;
+}
+.plate-bottom {
+   padding-bottom: 3em;
+}
+.plate-bottom .btn{
+    width: 200px;
+}
 
 
 
