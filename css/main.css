@@ -175,7 +175,7 @@ a{
 .sub-title{
     color: #5a5a5a;
 }
-.icon{
+.icon-rounded{
     border: 2px solid #dadada;
     width: 80px;
     height: 80px;
@@ -247,7 +247,21 @@ a{
 .plate-bottom .btn{
     width: 200px;
 }
-
-
+/*----------info-section-------------*/
+.article-title{
+    text-transform: uppercase;
+    color: #ed145b;
+    margin-bottom: 1em;
+}
+.article-text{
+    color: #5a5a5a;
+}
+.page-article{
+    display: flex;
+    margin: 2em 0;
+}
+.article-wrapper{
+    margin-left: 1em;
+}
 
 
