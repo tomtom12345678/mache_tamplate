@@ -16,7 +16,7 @@ a{
     text-decoration: none;
     color: #fff;
 }
-.image img{
+.img{
     display: block;
     width: 100%;
     height: 100%;
@@ -27,7 +27,6 @@ a{
 .container{
   max-width: 1200px;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -44,6 +43,9 @@ a{
     padding: 1em 2em;
     text-transform: uppercase;
     border-radius: 10em;
+}
+.btn-big{
+    width: 200px;
 }
 .page-section{
     padding: 100px 0;
@@ -66,7 +68,8 @@ a{
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    margin: 1em auto;
+    padding: 1em 0;
+    background: rgb(0,0,0,0.3);
 }
 .logo{
     font-size: 1.6rem;
@@ -87,6 +90,7 @@ a{
     width: 100%;
     position: absolute;
     top:100%;
+    background: rgba(237,20,91,0.9);
 }
 .page-nav .nav-list{
     text-align: center;
@@ -244,10 +248,7 @@ a{
 .plate-bottom {
    padding-bottom: 3em;
 }
-.plate-bottom .btn{
-    width: 200px;
-}
-/*----------info-section-------------*/
+/*----------news-section-------------*/
 .article-title{
     text-transform: uppercase;
     color: #ed145b;
@@ -263,5 +264,78 @@ a{
 .article-wrapper{
     margin-left: 1em;
 }
-
-
+/*-------------aditional-info----------------*/
+.aditional-info{
+    background:#ed145b;
+    text-align: center;
+    padding: 4em;
+}
+.adtional-text{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 200;
+}
+.btn-white{
+    background: #fff;
+    color: #ed145b;
+    margin-top: 1.5em;
+}
+/*---------------news-section-----------------*/
+.news-section .article-title{
+    color: #5a5a5a;
+}
+.news-article{
+    background: #f4f4f4;
+    padding: 1.5em;
+}
+.image-card{
+    margin: 1em 0;
+}
+.btn-transparent{
+    background: none;
+    color: #424242;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+.fa-angle-down{
+    font-size: 1.5em;
+    align-self: center;
+}
+.btn-transparent:hover{
+    color: #ed145b;
+    cursor: pointer;
+}
+/*---------------aside-2----------------*/
+.aside .section-header .section-title, .aside .section-header .sub-title{
+    color: #fff;
+}
+.aside-2{
+    height: 100vh;
+}
+.aside-2 .btn{
+    margin-top: 1.5em;
+}
+/*------download-section--------*/
+.download-section{
+    background: #f4f4f4;
+}
+.download-section .btn{
+    width: auto;
+    margin: 2em 0;
+}
+/*-----footer-------*/
+.footer{
+    background: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.footer-text{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0;
+}
