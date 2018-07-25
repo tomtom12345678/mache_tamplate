@@ -82,6 +82,10 @@ a{
     padding: 1em 0;
     background: rgb(0,0,0,0.3);
 }
+.page-header .container{
+    margin: 0;
+    padding: 0;
+}
 .logo{
     font-size: 1.6rem;
     font-weight: 700;
@@ -124,9 +128,12 @@ a{
     background: url(../img/bgM.jpg);
     height: 100vh;
 }
+.bg-image{
+    overflow: hidden;
+}
 .bg-image .page-text{
     color: #a0a0a0;
-    font-size: 1.4em;
+    font-size: 1.2rem;
 }
 .top-section p{
     margin: 50px 0;
@@ -153,10 +160,21 @@ a{
 /*--------about-section-----------*/
 .about-section{
     background: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+.about-section:before{
+    content: '';
+    background: url(../img/underlineB.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top:-47px;
 }
 .about-section .page-text{
     margin-bottom: 35px;
-    color: #5a5a5a;;
+    color: #5a5a5a;
 }
 .btn-about{
     background: none;
@@ -189,6 +207,7 @@ a{
     text-transform: uppercase;
     display: block;
 }
+
 /*--------------aside---------------*/
 .aside{
     height: 75vh;
@@ -273,6 +292,7 @@ a{
 .news-article{
     background: #f4f4f4;
     padding: 1.5em;
+    position: relative;
 }
 .image-card{
     display: flex;
@@ -292,6 +312,49 @@ a{
 .btn-transparent:hover{
     color: #ed145b;
     cursor: pointer;
+}
+.news-article:before{
+ content: '';
+ background: url(../img/underline.png);
+ width: 100%;
+ height: 10px;
+ display: block;
+ position: absolute;
+ top: -10px;
+ left: 0;
+ right: 0;
+}
+.image-container{
+    position: relative;
+    cursor: pointer;
+}
+.image-container .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    height: 100%;
+    width: 100%;
+    background: rgba(237,20,91,0.9);
+}
+.overlay .fa-search{
+    color: #fff;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+.image-container .overlay{
+    display: none;
+}
+.image-container:hover .overlay{
+    display: block;
+}
+.overlay .fa-search:hover{
+    color: #000;
 }
 /*---------------aside-2----------------*/
 .aside .section-header .section-title, .aside .section-header .sub-title{
@@ -317,6 +380,7 @@ a{
 }
 .footer-text{
     color: #fff;
+    font-size: 0.8rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -349,7 +413,7 @@ a{
 } /*  end media */
 @media screen and (min-width:1200px) {
     html{
-        font-size: 20px;
+        font-size: 19px;
     }
     .bg-image{
         background: url(../img/bgB.jpg);
@@ -384,28 +448,34 @@ a{
         width: 23%;
         margin-left: 1em;
     }
-    .card:first-of-type{
-        margin-left: 0;
-    }
     .page-article, .image-card{
         width: 30%;
-    }
-    .page-header{
-        flex-direction: row;
     }
     .hamburger{
         display: none;
     }
-    .page-nav .nav-list{
+    .nav-list{
         display: flex;
     }
-    .page-nav{
-        background: none;
-        right: 1em;
-        top: 0em;
-        width: auto;
+    .page-header .container{
+        position: relative;
+        margin: 0 auto;
+        padding: 0 20px;
+
     }
- }    /*  end media */
+    .page-nav{
+        width: auto;
+        right: 0;
+        top:0;
+        background: none;
+    }
+    .page-nav .nav-list{
+        padding: 0;
+    }
+    .footer .flex-display   {
+        justify-content: space-between;
+    }
+}    /*  end media */
  @media screen and (min-width:1300px){
     .adtional-text{
         margin-bottom: 0em;
