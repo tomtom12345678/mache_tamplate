@@ -1,9 +1,10 @@
 /*globall*/
 html{
     font-size: 14px;
+    font-family: 'Lato', sans-serif;
 }
 body{
- font-family: 'Lato', sans-serif;
+
     margin: 0;
     padding: 0;
 }
@@ -105,6 +106,16 @@ a{
     padding-right: .5em;
     border:none;
     color: #fff;
+    cursor: pointer;
+}
+.open-icon, .close-icon{
+    transition: ease-in-out .3s
+}
+.hamburger:hover .open-icon{
+    transform: rotate(-45deg);
+}
+.hamburger:hover .close-icon{
+    transform: rotate(-45deg);
 }
 .page-nav{
     width: 100%;
@@ -318,14 +329,19 @@ a{
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding: 1.5em;
 }
 .fa-angle-down{
     font-size: 1.5rem;
     align-self: center;
+    position: absolute;
+    animation: move .7s infinite linear alternate;
 }
 .btn-transparent:hover{
     color: #ed145b;
     cursor: pointer;
+     animation-play-state: paused;
 }
 .news-article:before{
  content: '';
@@ -407,6 +423,10 @@ a{
       flex-direction: row;
       flex-wrap: wrap;
   }
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
   .card{
       width: 45%;
       margin-left: 1em;
@@ -417,7 +437,7 @@ a{
 }/*  end media */
 @media screen and (min-width:900px) {
   html{
-      font-size: 18px;
+      font-size: 17px;
   }
   .sub-title{
       width: 75%;
@@ -427,7 +447,7 @@ a{
 } /*  end media */
 @media screen and (min-width:1200px) {
     html{
-        font-size: 19px;
+        font-size: 17px;
     }
     .bg-image{
         background: url(../img/bgB.jpg);
@@ -512,4 +532,24 @@ a{
 }
 .margin-top{
     margin-top: 1.5em;
+}
+.bg-pink{
+    background: #ed145b;
+}
+@keyframes move{
+    0%{
+       bottom: -0.1em;
+     }
+    25%{
+      bottom: -0.175em;
+    }
+    50%{
+        bottom: -0.25em;
+    }
+    75%{
+        bottom: -0.38em;
+    }
+    100%{
+       bottom: -0.5em;
+    }
 }
