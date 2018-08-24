@@ -44,6 +44,7 @@ a{
     padding: 1em 2em;
     text-transform: uppercase;
     border-radius: 10em;
+    cursor: pointer;
 }
 .btn-big{
     width: 200px;
@@ -203,10 +204,15 @@ a{
     color: #ed145b;
     padding:0;
     display: flex;
+    position: relative;
+    padding: 1em;
 }
 .fa-play-circle{
     font-size: 1.7rem;
     margin-left: 0.5em;
+    position: absolute;
+    left: 5em;
+    animation: slidein 1s infinite linear alternate;
 }
 /*-----------service-section-----------*/
 .section-list{
@@ -341,7 +347,6 @@ a{
 .btn-transparent:hover{
     color: #ed145b;
     cursor: pointer;
-     animation-play-state: paused;
 }
 .news-article:before{
  content: '';
@@ -551,5 +556,13 @@ a{
     }
     100%{
        bottom: -0.5em;
+    }
+}
+@keyframes slidein {
+    0%{
+       left: 5em;
+    }
+    100%{
+        left: 6em;
     }
 }
